@@ -1,0 +1,1 @@
+ /Users/luisleal/Desktop/ITC/Gestion/proyectoGestionDeProyectos/patines_app/.dart_tool/flutter_build/76d3e164fd403cf29a196c7fa64694e8/native_assets.json: 
