@@ -10,9 +10,7 @@ class PaymentScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MultiProvider(
-      providers: [
-        ChangeNotifierProvider(create: (_) => TripProvider()),
-      ],
+      providers: [ChangeNotifierProvider(create: (_) => TripProvider())],
       child: Builder(
         builder: (context) {
           // Simulamos un viaje al cargar la pantalla
@@ -31,7 +29,8 @@ class PaymentScreen extends StatelessWidget {
               child: Consumer<TripProvider>(
                 builder: (context, provider, child) {
                   final trip = provider.currentTrip;
-                  if (trip == null) return Center(child: Text('No hay viaje activo'));
+                  if (trip == null)
+                    return Center(child: Text('No hay viaje activo'));
 
                   return Column(
                     children: [
@@ -41,11 +40,15 @@ class PaymentScreen extends StatelessWidget {
                       Text('Costo: \$${trip.cost}'),
                       TextField(
                         controller: cardNumberController,
-                        decoration: InputDecoration(labelText: 'Número de Tarjeta'),
+                        decoration: InputDecoration(
+                          labelText: 'Número de Tarjeta',
+                        ),
                       ),
                       TextField(
                         controller: expiryController,
-                        decoration: InputDecoration(labelText: 'Fecha de Vencimiento'),
+                        decoration: InputDecoration(
+                          labelText: 'Fecha de Vencimiento',
+                        ),
                       ),
                       TextField(
                         controller: cvvController,
