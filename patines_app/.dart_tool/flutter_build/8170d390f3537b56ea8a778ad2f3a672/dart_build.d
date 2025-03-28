@@ -1,0 +1,1 @@
+ /Users/luisleal/Desktop/ITC/Gestion/proyectoGestionDeProyectos/patines_app/.dart_tool/flutter_build/8170d390f3537b56ea8a778ad2f3a672/dart_build_result.json: 
